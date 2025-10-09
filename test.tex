@@ -1,0 +1,88 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{decorations.pathmorphing,arrows.meta}
+\usepackage{geometry}
+\usepackage{minted}
+\geometry{margin=25mm}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE Kreisfläche — Grafik mit zugehöriger Formel}
+\end{center}
+
+Dies ist ein kurzes Beispieldokument. Die folgende Grafik zeigt einen Kreis mit Radius $r$; die Fläche des Kreises wird durch die bekannte Formel
+\[ A = \pi r^2 \]
+beschrieben. Rechts neben der Grafik steht die Formel, und in der Grafik ist der Radius eingezeichnet.
+
+\vspace{8mm}
+
+\begin{tikzpicture}[scale=1]
+  % Kreis und Schattierung
+  \def\r{2} % Radius in cm
+  \fill[blue!15] (0,0) circle (\r cm);
+  \draw[thick] (0,0) circle (\r cm);
+
+  % Mittelpunkt und Punkt auf Kreis
+  \fill (0,0) circle (1.5pt) node[below left] {M};
+  \coordinate (P) at (\r cm,0);
+  \fill (P) circle (1.5pt) node[below right] {P};
+
+  % Radiuspfeil
+  \draw[->,>=stealth,thick] (0,0) -- (P) node[midway,below] {$r$};
+
+  % Bogen/Markierung
+  \draw[decorate,decoration={snake,amplitude=0.6mm}] (0:0.9\r cm) arc (0:45:0.9\r cm);
+
+  % Beschriftung der Fläche
+  \node at (0,-2.6) {Kreis mit Radius $r$};
+
+  % Pfeil zur Formel
+  \draw[->,gray] (2.6,1.6) .. controls (4.0,1.2) and (4.0,0.2) .. (4.6,0.0);
+
+  % Formel-Box
+  \node[draw=black,rounded corners,fill=white] at (5.3,0) {
+    \begin{minipage}{6.5cm}
+      {\large $A=\pi r^{2}$}\\[4pt]
+      Kurz: Die Fläche ergibt sich durch Integration in Polarkoordinaten:
+      \[A=\int_{0}^{2\pi}\int_{0}^{r}\rho\,d\rho\,d\theta=\pi r^{2}\]
+    \end{minipage}
+  };
+\end{tikzpicture}
+
+\vspace{6mm}
+
+Kurze Herleitung (nochmals als Text): Setzt man in Polarkoordinaten $dA=\rho\,d\rho\,d\theta$, so erhält man
+\[
+A=\int_{0}^{2\pi}\int_{0}^{r}\rho\,d\rho\,d\theta
+=\int_{0}^{2\pi}\Bigl[\tfrac{1}{2}\rho^{2}\Bigr]_{0}^{r}\,d\theta
+=\int_{0}^{2\pi}\tfrac{1}{2}r^{2}\,d\theta
+=\pi r^{2}.
+\]
+
+\vspace{6mm}
+
+Weiteres: Wenn du eine andere Formel/Graphik möchtest (z.B. Parabel, Normalverteilung, elektrische Feldlinien etc.), sag mir welche Formel und ich passe die Grafik entsprechend an.
+
+
+\begin{tikzpicture}
+  \begin{axis}[xlabel=$x$, ylabel={$y = \sin(x)$}]
+    \addplot {x^2};
+  \end{axis}
+\end{tikzpicture}
+
+\begin{minted}[]{python}
+def hello_world():
+    print("Hello, world!")
+\end{minted}
+
+
+Inline code: \mintinline{python}{print("Hello, world!")}
+
+
+\end{document}
