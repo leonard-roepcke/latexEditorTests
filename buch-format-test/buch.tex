@@ -4,6 +4,8 @@
 %\usepackage[ngerman]{babel}
 \usepackage{graphicx}
 \usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{circuits.logic.US, positioning}
 \geometry{margin=25mm}
 
 \newcommand{\AuthorName}{Leonard Röpcke}
@@ -38,6 +40,39 @@
 \mainmatter
 \input{kapitel/einleitung.tex}
 
+
+\begin{tikzpicture}[circuit logic US, scale=1, every node/.style={transform shape}]
+    % Eingänge
+    \node (A) at (0,1) [label=left:A] {};
+    \node (B) at (0,-1) [label=left:B] {};
+
+    % AND Gatter
+    \node (and) [and gate, draw, right=of nota, yshift=0cm, xshift=1cm] {};
+    
+    %Nand
+    \node (nand) [nand gate, draw, right=of notb, yshift=0.75cm] {};
+
+    % OR Gatter (XOR Ausgang)
+    \node (or) [or gate, draw, right=of and, xshift=-0.75cm, yshift=-0.75cm] {};
+
+    % Verbindungen
+    %\draw (A.east) -- ++(0.5,0) |- (nota.input);
+    %\draw (B.east) -- ++(0.5,0) |- (notb.input);
+
+    %\draw (nota.output) -- (and1.input 1);
+    %\draw (B.east) -- ++(1,0) |- (and1.input 2);
+
+    %\draw (A.east) -- ++(1,0) |- (and2.input 1);
+    %\draw (notb.output) -- (and2.input 2);
+
+    %\draw (and1.output) -- ++(1,0) |- (or1.input 1);
+    %\draw (and2.output) -- ++(1,0) |- (or1.input 2);
+
+    % Ausgang
+    %\node[right=of or1.output, label=right:Ausgang] {};
+    %\draw (or1.output) -- ++(1,0);
+
+\end{tikzpicture}
 
 
 \end{document}
