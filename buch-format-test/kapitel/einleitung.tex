@@ -1,20 +1,44 @@
+% chapters/basics.tex
 \chapter{Einleitung}
-\section{Forwort}
-Guten Tag, mein Name ist Leonard Röpcke und all das wissen das ich in diesem Buch weitergebe habe ich mir selber angeeignet. 
-Weshalb sie immer ein bisschen skeptisch sein sollten und ruig etwas hinterfragen sollten.
-Die Digitale Logik ist meiner meinung nach einer der reinsten Themen die es so gibt, da alles logisch aufeinander aufbaut.
-Ich hoffe ich werde ihnen das anhand dieses Buches näher bringen können.
-Um dieses Buch zu verstehen ist es nicht notwendig vorwissen mit zubringen, aber sie sollten die einzelen Konzepte verstehen und am besten
-einmal selbstständig simoliert oder sogar nachgebaut haben.
-Viel spaß beim lesen und lernen wünscht ihnen Leonard Röpcke.
+
+\section*{Vorwort}
+Dieses Buch vermittelt die Grundlagen der digitalen Logik. Alle Inhalte basieren auf eigenständiger Recherche und praktischer Erfahrung. 
+Lesende sollten stets kritisch hinterfragen und die Konzepte selbstständig nachvollziehen. 
+Die digitale Logik ist ein Thema, das konsequent auf klaren, logischen Prinzipien aufbaut. 
+Dieses Buch ist so aufgebaut, dass kein Vorwissen erforderlich ist, um die grundlegenden Konzepte zu verstehen. 
+Praktische Übungen oder Simulationen der vorgestellten Schaltungen sind empfehlenswert, um das Verständnis zu vertiefen.
 
 \section{Grundlagen der digitalen Logik}
-\subsection{Was ist digitale Logik?}
-Die Grundlage woraus jede Inforamtion besteht kann immer klar definiert werden. Bei einer Sprache sind es die Buchstaben, 
-bei Zahlen die Ziffern.In der digitalen Logik sind es die Zustände 0 und 1. Jeder Stromquelle hatt hat eine + und eine - Seite. 
-Um uns die dinge zu vereinfachen nennen wir die + Seite 1 und die - Seite 0. Die dititale Logik beschreibt jetzt wie wir diese mit Logischen
-Operatoren so verknüpfen können, das wir die einst einfachsten verküpungen später in komplexe Schaltungen umwandeln können.
-Die ganze digitale Logik baut darauf auf, das wir einfach schaltungen nehmen sie kombinierern und so weiter abstahieren um Komplexere vorgänge zu ermöglichen.
 
-\subsection{Ein Transistor}
+\subsection{Definition der digitalen Logik}
+Digitale Logik ist die Lehre von der Verarbeitung binärer Signale durch logische Operatoren. 
+Die Grundlage jeder digitalen Information sind zwei Zustände: 0 und 1. 
+In der Praxis werden diese Zustände häufig durch elektrische Spannungen dargestellt: ein hoher Pegel entspricht 1, ein niedriger Pegel entspricht 0. 
+Digitale Logik beschreibt, wie diese Zustände miteinander verknüpft werden können, um komplexe Informationen zu verarbeiten.
 
+\subsection{Abstraktion elektronischer Bauteile}
+Um digitale Schaltungen analysieren und entwerfen zu können, abstrahieren wir elektronische Bauteile zu sogenannten logischen Gattern. 
+Diese Gatter führen grundlegende logische Operationen aus und bilden die Bausteine komplexer Schaltungen. 
+Die wichtigsten Gatter sind:
+\begin{itemize}
+    \item \textbf{UND (AND)}: Liefert 1, wenn beide Eingänge 1 sind.
+    \item \textbf{ODER (OR)}: Liefert 1, wenn mindestens ein Eingang 1 ist.
+    \item \textbf{NICHT (NOT)}: Kehrt den Eingangswert um.
+\end{itemize}
+
+\subsection{Beispiel: Wahrheitstabelle des AND-Gatters}
+\begin{center}
+\begin{tabular}{c c | c}
+A & B & A AND B \\
+\hline
+0 & 0 & 0 \\
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+1 & 1 & 1 \\
+\end{tabular}
+\end{center}
+
+\subsection{Zusammenfassung}
+Die digitale Logik bildet die Grundlage aller digitalen Systeme. 
+Durch die Abstraktion von elektronischen Bauteilen zu logischen Gattern lassen sich komplexe Schaltungen systematisch analysieren und entwerfen. 
+Die hier vorgestellten Grundprinzipien werden in den folgenden Kapiteln weiter vertieft und durch konkrete Beispiele ergänzt.
