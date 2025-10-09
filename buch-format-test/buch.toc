@@ -1,1 +1,3 @@
-\babel@toc {nil}{}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{}%
+\contentsline {section}{\numberline {1.1}Forwort}{1}{}%
+\contentsline {section}{\numberline {1.2}Grundlagen der digitalen Logik}{1}{}%

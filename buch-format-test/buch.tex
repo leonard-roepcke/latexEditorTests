@@ -1,7 +1,7 @@
 \documentclass{book}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+%\usepackage[ngerman]{babel}
 \usepackage{graphicx}
 \usepackage{geometry}
 \geometry{margin=25mm}
@@ -14,7 +14,7 @@
 \begin{document}
 \begin{titlepage}
   \centering
-  {\scshape\LARGE \Institute \par}
+  {\scshape\LARGE \par}
   \vspace{2.5cm}
   {\huge\bfseries Von 0 und 1 zu einem Computer\par}
   \vspace{0.8cm}
@@ -34,5 +34,10 @@
 \end{titlepage}
 \tableofcontents
 \newpage
-Hallo Welt!
+
+\mainmatter
+\input{kapitel/einleitung.tex}
+
+
+
 \end{document}
