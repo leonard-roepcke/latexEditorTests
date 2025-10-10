@@ -2,5 +2,5 @@
 \contentsline {section}{\numberline {1.1}Grundlagen der digitalen Logik}{1}{}%
 \contentsline {subsection}{\numberline {1.1.1}Definition der digitalen Logik}{1}{}%
 \contentsline {subsection}{\numberline {1.1.2}Abstraktion elektronischer Bauteile}{1}{}%
-\contentsline {subsection}{\numberline {1.1.3}Beispiel: Wahrheitstabelle des AND-Gatters}{1}{}%
+\contentsline {subsection}{\numberline {1.1.3}Wahrheitstabellen}{1}{}%
 \contentsline {subsection}{\numberline {1.1.4}Zusammenfassung}{2}{}%
