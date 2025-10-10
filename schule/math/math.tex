@@ -40,7 +40,6 @@
 \subsubsection{Beispiel: Uhr tragen}
 In einer Schule werden \( n = 1000 \) Schülerinnen und Schüler gefragt, ob sie eine Uhr tragen.  
 Die Wahrscheinlichkeit hierfür beträgt \( p = 0{,}45 \).
-
 Gesucht ist die Wahrscheinlichkeit, dass die Anzahl der Uhrenträger:innen maximal um \( 3\sigma \) abweicht.
 
 \[
@@ -61,14 +60,30 @@ P(|X - \mu| \leq 3\sigma) \approx 0{,}9973 \quad \text{bzw. } 99{,}73\%.
 \]
 
 \medskip
+\noindent
 \textbf{Mit der kumulierten Normalverteilung:}
 \[
 P(402 \leq X \leq 497)
 = \int_{402{,}5}^{497{,}5} \varphi(x) \, dx
-\approx 0{,}9987 - 0{,}0012 = 0{,}9975
+\approx 0{,}9987 - 0{,}0012 = 0{,}9975 \quad \text{bzw. } 99{,}75\%.
 \]
-
+\noindent
 Damit beträgt die Wahrscheinlichkeit, dass die Anzahl der Uhrenträger:innen maximal um \( 3\sigma \) abweicht, etwa \( 99{,}75\% \).
 Hinweis: Es wird eine sogennate Stetigkeitskorrektur durchgeführt, indem 0,5 zu den Grenzen addiert bzw. subtrahiert wird.
+
+\textbf{mit der Sigma-Regel:}
+\[
+p(|X - \mu| \leq 3\sigma) \approx 0{,}9973 \quad \text{bzw. } 99{,}73\%.
+\]
+
+\subsection{Wahrscheinlichkeiten bei kontinuierlichen Größen}
+Die Normalverteilung hat den Vorteil, dass sie insbessondere bei nicht-diskreten, also kontinuierlichen
+Größen verwendet werden kann. Beispiele hierfür sind:
+
+\subsubsection{Körpergwecht von erwachsenen Männern}
+
+
+
+
 
 \end{document}
