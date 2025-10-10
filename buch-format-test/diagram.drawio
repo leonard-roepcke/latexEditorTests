@@ -37,6 +37,27 @@
                 <mxCell id="10" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
                     <mxGeometry x="200" y="340" width="80" height="80" as="geometry"/>
                 </mxCell>
+                <mxCell id="14" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.inverting_contact;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="210" width="10" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=and;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="60" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="17" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.iec_logic_gates.and;" vertex="1" parent="1">
+                    <mxGeometry x="35" y="260" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.iec_logic_gates.and;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="630" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.iec_logic_gates.or;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="630" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="19" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
