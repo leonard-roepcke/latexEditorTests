@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{margin=25mm}
+
+\newcommand{\AuthorName}{Leonard Röpcke\\Klasse TG-J2b}
+\newcommand{\Institute}{Zepellin Gewerbeschule Konstanz}
+\newcommand{\Subtitle}{Die Wissenschaft der Zahlen}
+\newcommand{\MyDate}{\today}
+
+\begin{document}
+\begin{titlepage}
+  \centering
+  {\scshape\LARGE \Institute \par}
+  \vspace{2.5cm}
+  {\huge\bfseries Mathematik\par}
+  \vspace{0.8cm}
+  {\Large\itshape \Subtitle \par}
+  \vfill
+  {\Large Autor\par}
+  {\Large \AuthorName \par}
+  \vspace{1cm}
+  {\Large Datum\par}
+  {\Large \MyDate \par}
+  \vfill
+  % Optional: Bild einfügen (Datei hinzufügen oder Zeile auskommentieren)
+  % \includegraphics[width=6cm]{example-image}
+  \vspace{1cm}
+  {\small }
+  %unten am anfang
+\end{titlepage}
+\tableofcontents
+\newpage
+
+\section{Stochastik}
+\subsection{Biominalverteilung}
+\subsubsection{Beispiel: Uhr tragen}
+In einer Schule werden \( n = 1000 \) Schülerinnen und Schüler gefragt, ob sie eine Uhr tragen.  
+Die Wahrscheinlichkeit hierfür beträgt \( p = 0{,}45 \).
+
+Gesucht ist die Wahrscheinlichkeit, dass die Anzahl der Uhrenträger:innen maximal um \( 3\sigma \) abweicht.
+
+\[
+\mu = n \cdot p = 1000 \cdot 0{,}45 = 450
+\]
+\[
+\sigma = \sqrt{n \cdot p \cdot (1 - p)} = \sqrt{1000 \cdot 0{,}45 \cdot 0{,}55} \approx 15{,}73
+\]
+\[
+3\sigma \approx 3 \cdot 15{,}73 = 47{,}19
+\]
+
+\noindent
+\textbf{Mit der kumulierten Binomialverteilung:}\\
+Mit dem Taschenrechner (gerundetes \(\sigma\) auf zwei Nachkommastellen) ergibt sich eine Wahrscheinlichkeit von etwa
+\[
+P(|X - \mu| \leq 3\sigma) \approx 0{,}9973 \quad \text{bzw. } 99{,}73\%.
+\]
+
+\medskip
+\textbf{Mit der kumulierten Normalverteilung:}
+\[
+P(402 \leq X \leq 497)
+= \int_{402{,}5}^{497{,}5} \varphi(x) \, dx
+\approx 0{,}9987 - 0{,}0012 = 0{,}9975
+\]
+
+Damit beträgt die Wahrscheinlichkeit, dass die Anzahl der Uhrenträger:innen maximal um \( 3\sigma \) abweicht, etwa \( 99{,}75\% \).
+
+
+\end{document}
