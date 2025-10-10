@@ -41,19 +41,19 @@
 \input{kapitel/einleitung.tex}
 
 
-\begin{tikzpicture}[circuit logic US, scale=1, every node/.style={transform shape}]
+%\begin{tikzpicture}[circuit logic US, scale=1, every node/.style={transform shape}]
     % Eingänge
-    \node (A) at (0,1) [label=left:A] {};
-    \node (B) at (0,-1) [label=left:B] {};
+    %\node (A) at (0,1) [label=left:A] {};
+    %\node (B) at (0,-1) [label=left:B] {};
 
     % AND Gatter
-    \node (and) [and gate, draw, right=of nota, yshift=0cm, xshift=1cm] {};
+    %\node (and) [and gate, draw, right=of nota, yshift=0cm, xshift=1cm] {};
     
     %Nand
-    \node (nand) [nand gate, draw, right=of notb, yshift=0.75cm] {};
+    %\node (nand) [nand gate, draw, right=of notb, yshift=0.75cm] {};
 
     % OR Gatter (XOR Ausgang)
-    \node (or) [or gate, draw, right=of and, xshift=-0.75cm, yshift=-0.75cm] {};
+    %\node (or) [or gate, draw, right=of and, xshift=-0.75cm, yshift=-0.75cm] {};
 
     % Verbindungen
     %\draw (A.east) -- ++(0.5,0) |- (nota.input);
@@ -72,7 +72,15 @@
     %\node[right=of or1.output, label=right:Ausgang] {};
     %\draw (or1.output) -- ++(1,0);
 
-\end{tikzpicture}
+%\end{tikzpicture}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{diagram.png}
+  \caption{Test Diagramm mit draw.io erstellt}
+  \label{fig:diagram}
+\end{figure}
 
 
 \end{document}
