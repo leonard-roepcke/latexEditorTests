@@ -1,3 +1,6 @@
-\babel@toc {nil}{}\relax 
-\contentsline {section}{\numberline {1}Test section}{1}{section.1}%
-\contentsline {section}{\numberline {2}Code}{2}{section.2}%
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Kreisfläche — Grafik mit Formel}{2}{section.2}%
+\contentsline {section}{\numberline {3}Python-Code Beispiel}{2}{section.3}%
+\contentsline {section}{\numberline {4}Verweise im Dokument}{2}{section.4}%
+\contentsline {section}{\numberline {5}Diagramm-Beispiel mit PGFPlots}{3}{section.5}%

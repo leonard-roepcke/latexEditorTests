@@ -1,39 +1,72 @@
 \documentclass[a4paper,12pt]{article}
-\usepackage[utf8]{inputenc}
+
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
 \usepackage{tikz}
-\usepackage{pgfplots}
-\usetikzlibrary{decorations.pathmorphing,arrows.meta}
-\usepackage{geometry}
-\usepackage{minted}
-\geometry{margin=25mm}
+\usepackage{pgfplots}           
 
-\usepackage[hidelinks]{hyperref}
-%\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=red]{hyperref}
+% --- Hyperlink-Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    citecolor=green,
+    pdfauthor={Dein Name},
+    pdftitle={Beispieldokument mit Code und Grafiken}
+}
 
+% --- Code-Highlighting ---
+\definecolor{codebg}{RGB}{245,245,244}
+\definecolor{keywordcolor}{RGB}{0,0,180}
+\definecolor{stringcolor}{RGB}{163,21,21}
+\definecolor{commentcolor}{RGB}{0,128,0}
 
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{codebg},
+  commentstyle=\color{commentcolor}\ttfamily,
+  keywordstyle=\color{keywordcolor}\bfseries,
+  stringstyle=\color{stringcolor},
+  basicstyle=\ttfamily\small,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  frame=single,
+  frameround=tttt,
+  rulecolor=\color{gray!50},
+  numbers=left,
+  numbersep=8pt,
+  showstringspaces=false,
+  tabsize=4,
+  captionpos=b
+}
 
+\lstset{style=mystyle}
+
+% --- Dokument ---
 \begin{document}
+
 \tableofcontents
+\newpage
 
+\section{Einleitung}
+Dies ist ein Beispiel für ein wissenschaftliches LaTeX-Dokument mit:
 
-%\autoref{sec:einleitung}
+\begin{itemize}
+    \item klickbaren Hyperlinks (\href{https://www.latex-project.org}{LaTeX-Projekt})
+    \item Code-Highlighting
+    \item TikZ-Grafiken
+\end{itemize}
+
+\section{Kreisfläche — Grafik mit Formel}
+Hier eine anschauliche Darstellung eines Kreises:
 
 \begin{center}
-  {\LARGE Kreisfläche — Grafik mit zugehöriger Formel}
-\end{center}
-
-Dies ist ein kurzes Beispieldokument. Die folgende Grafik zeigt einen Kreis mit Radius $r$; die Fläche des Kreises wird durch die bekannte Formel
-\[ A = \pi r^2 \]
-beschrieben. Rechts neben der Grafik steht die Formel, und in der Grafik ist der Radius eingezeichnet.
-
-\vspace{8mm}
-
 \begin{tikzpicture}[scale=1]
   % Kreis und Schattierung
-  \def\r{2} % Radius in cm
+  \def\r{2} % Radius
   \fill[blue!15] (0,0) circle (\r cm);
   \draw[thick] (0,0) circle (\r cm);
 
@@ -45,10 +78,7 @@ beschrieben. Rechts neben der Grafik steht die Formel, und in der Grafik ist der
   % Radiuspfeil
   \draw[->,>=stealth,thick] (0,0) -- (P) node[midway,below] {$r$};
 
-  % Bogen/Markierung
-  \draw[decorate,decoration={snake,amplitude=0.6mm}] (0:0.9\r cm) arc (0:45:0.9\r cm);
-
-  % Beschriftung der Fläche
+  % Beschriftung
   \node at (0,-2.6) {Kreis mit Radius $r$};
 
   % Pfeil zur Formel
@@ -58,42 +88,34 @@ beschrieben. Rechts neben der Grafik steht die Formel, und in der Grafik ist der
   \node[draw=black,rounded corners,fill=white] at (5.3,0) {
     \begin{minipage}{6.5cm}
       {\large $A=\pi r^{2}$}\\[4pt]
-      Kurz: Die Fläche ergibt sich durch Integration in Polarkoordinaten:
+      Kurz: Fläche durch Integration in Polarkoordinaten:
       \[A=\int_{0}^{2\pi}\int_{0}^{r}\rho\,d\rho\,d\theta=\pi r^{2}\]
     \end{minipage}
   };
 \end{tikzpicture}
+\end{center}
 
-\section{Test section}
-%\label{sec:einleitung}
-\vspace{6mm}
+\section{Python-Code Beispiel}\label{sec:python}
+Hier ein farblich hervorgehobener Python-Code:
 
-Kurze Herleitung (nochmals als Text): Setzt man in Polarkoordinaten $dA=\rho\,d\rho\,d\theta$, so erhält man
-\[
-A=\int_{0}^{2\pi}\int_{0}^{r}\rho\,d\rho\,d\theta
-=\int_{0}^{2\pi}\Bigl[\tfrac{1}{2}\rho^{2}\Bigr]_{0}^{r}\,d\theta
-=\int_{0}^{2\pi}\tfrac{1}{2}r^{2}\,d\theta
-=\pi r^{2}.
-\]
-
-\vspace{6mm}
-
-Weiteres: Wenn du eine andere Formel/Graphik möchtest (z.B. Parabel, Normalverteilung, elektrische Feldlinien etc.), sag mir welche Formel und ich passe die Grafik entsprechend an.
-
-
-\begin{tikzpicture}
-  \begin{axis}[xlabel=$x$, ylabel={$y = \sin(x)$}]
-    \addplot {x^2};
-  \end{axis}
-\end{tikzpicture}
-\section{Code}
-\begin{minted}[]{python}
+\begin{lstlisting}[language=Python, caption={Hello World Beispiel}]
 def hello_world():
-    print("Hello, world!!!")
-\end{minted}
+    print("Hello, world!")
 
+for i in range(3):
+    hello_world()
+\end{lstlisting}
 
-Inline code: \mintinline{python}{print("Hello, world!")}
+Inline-Code geht auch: \lstinline{print("Hallo Welt")}
 
+\section{Verweise im Dokument}
+Siehe Abschnitt~\ref{sec:python} für ein Code-Beispiel.
+
+\section{Diagramm-Beispiel mit PGFPlots}
+\begin{tikzpicture}
+\begin{axis}[xlabel=$x$, ylabel={$y=x^2$}]
+    \addplot {x^2};
+\end{axis}
+\end{tikzpicture}
 
 \end{document}
