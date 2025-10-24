@@ -10,7 +10,16 @@
 \usepackage{minted}
 \geometry{margin=25mm}
 
+%\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=red]{hyperref}
+
+
+
 \begin{document}
+\tableofcontents
+
+
+%\autoref{sec:einleitung}
 
 \begin{center}
   {\LARGE Kreisfläche — Grafik mit zugehöriger Formel}
@@ -55,6 +64,8 @@ beschrieben. Rechts neben der Grafik steht die Formel, und in der Grafik ist der
   };
 \end{tikzpicture}
 
+\section{Test section}
+%\label{sec:einleitung}
 \vspace{6mm}
 
 Kurze Herleitung (nochmals als Text): Setzt man in Polarkoordinaten $dA=\rho\,d\rho\,d\theta$, so erhält man
