@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.10.8)  24 OCT 2025 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.10.8)  24 OCT 2025 15:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -551,7 +551,6 @@ File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
 Package hyperref Info: Hyper figures OFF on input line 4157.
 Package hyperref Info: Link nesting OFF on input line 4162.
 Package hyperref Info: Hyper index ON on input line 4165.
@@ -578,7 +577,7 @@ Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
 Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring OFF on input line 6062.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
  (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
@@ -688,7 +687,7 @@ Package pgfplots Warning: running in backwards compatibility mode (unsuitable ti
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 18.
+Package hyperref Info: Link coloring OFF on input line 18.
 (./test.out) (./test.out)
 \@outlinefile=\write5
 \openout5 = `test.out'.
@@ -709,22 +708,23 @@ Overfull \hbox (20.80899pt too wide) in paragraph at lines 81--82
 []\T1/cmr/m/n/12 Weiteres: Wenn du eine andere Formel/Graphik möchtest (z.B. Parabel, Normalverteilung,
  []
 
-\pydata@fh@_098F6BCD4621D373CADE4E832627B4F6.data.minted=\write7
-\openout7 = `_098F6BCD4621D373CADE4E832627B4F6.data.minted'.
-
-runsystem(latexminted config  --timestamp 20251024151555 098F6BCD4621D373CADE4E832627B4F6)...executed safely (allowed).
-
-(./_098F6BCD4621D373CADE4E832627B4F6.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20251024151555 098F6BCD4621D373CADE4E832627B4F6)...executed safely (allowed).
-
- (./_minted/default.style.minted) (./_minted/A563B1F360E0CBD1A6EC6936A2209C5E.highlight.minted
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
 
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./_minted/5335DF78A6DAE3D54607DD0A9E5F9C3A.highlight.minted)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+\pydata@fh@_098F6BCD4621D373CADE4E832627B4F6.data.minted=\write7
+\openout7 = `_098F6BCD4621D373CADE4E832627B4F6.data.minted'.
+
+runsystem(latexminted config  --timestamp 20251024151735 098F6BCD4621D373CADE4E832627B4F6)...executed safely (allowed).
+
+ (./_098F6BCD4621D373CADE4E832627B4F6.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20251024151735 098F6BCD4621D373CADE4E832627B4F6)...executed safely (allowed).
+
+ (./_minted/default.style.minted) (./_minted/A563B1F360E0CBD1A6EC6936A2209C5E.highlight.minted
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+) (./_minted/5335DF78A6DAE3D54607DD0A9E5F9C3A.highlight.minted)
 
 [2] (./test.aux)
  ***********
@@ -732,21 +732,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `test.out' has not changed.
-(rerunfilecheck)             Checksum: 7D6D72EFCA0B86426095D00E26E24F1A;106.
+(rerunfilecheck)             Checksum: 459B467478CF2C0F35CCAC4AADFD2608;169.
  ) 
 Here is how much of TeX's memory you used:
- 36728 strings out of 475171
- 871693 string characters out of 5767095
- 1468163 words of memory out of 5000000
- 59173 multiletter control sequences out of 15000+600000
+ 36727 strings out of 475171
+ 871658 string characters out of 5767095
+ 1463120 words of memory out of 5000000
+ 59171 multiletter control sequences out of 15000+600000
  571019 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  102i,9n,107p,808b,1852s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/core-user/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/core-user/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/core-user/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk> </home/core-user/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/core-user/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on test.pdf (2 pages, 103906 bytes).
+Output written on test.pdf (2 pages, 105887 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
